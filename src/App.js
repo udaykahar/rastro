@@ -15,6 +15,7 @@ function App() {
       <Newsletter />
       <Cards />
       <Footer />
+      
     </div>
   )
 }
