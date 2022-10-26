@@ -9,7 +9,6 @@ const Navbar = () => {
     setNav(!nav)
   }
 
-
   return (
     <div className='bg-black text-white w-full sticky top-0 z-10' >
     <div className=' text-white flex justify-between items-center h-24 max-w-[1240px] px-4 md:mx-auto'>
