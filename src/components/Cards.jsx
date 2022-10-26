@@ -26,7 +26,7 @@ const Cards = () => {
                     <div className=' mb-4 text-center font-medium'>
                         <p className='py-2 border-b '>500GB Storage</p>
                         <p className='py-2 border-b '>1 Gtanted User</p>
-                        <p className='py-2 border-b '>Send up to 2GB</p>
+                        <p className='py-2 border-b '>Send up to 5GB</p>
                     </div>
                     <button className='bg-black  w-[200px] mx-auto text-[#00df9a] py-2 px-4 rounded-lg'>Start Trial</button>
                 </div>
@@ -38,7 +38,7 @@ const Cards = () => {
                     <div className=' mb-4 text-center font-medium'>
                         <p className='py-2 border-b '>500GB Storage</p>
                         <p className='py-2 border-b '>1 Gtanted User</p>
-                        <p className='py-2 border-b '>Send up to 2GB</p>
+                        <p className='py-2 border-b '>Send up to 10GB</p>
                     </div>
                     <button className='bg-[#00df9a] w-[200px] mx-auto text-white py-2 px-4 rounded-lg'>Start Trial</button>
                 </div>
