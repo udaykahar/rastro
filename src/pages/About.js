@@ -1,8 +1,17 @@
 import React from 'react'
+import AboutUs from '../components/AboutUs'
+import WhyUs from '../components/WhyUs'
+import Feedback from '../components/Feedback'
+import Footer from '../components/Footer'
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+      <AboutUs />
+      <WhyUs />
+      <Feedback />
+      <Footer />
+    </>
   )
 }
 
