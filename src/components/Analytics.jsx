@@ -1,11 +1,11 @@
 import React from 'react'
-import Laptop from '../assets/laptop.jpg'
+// import Laptop from '../assets/laptop.jpg'
 
 const Analytics = () => {
   return (
     <div className='bg-white py-16 px-4 '>
         <div className='max-w-[1240px mx-auto grid md:grid-cols-2' >
-            <img src={Laptop} alt='laptop' className='w-[500px] mx-auto my-4' />
+            {/* <img src={Laptop} alt='laptop' className='w-[500px] mx-auto my-4' /> */}
             <div className='flex flex-col justify-center md:items-start' >
                 <h2 className='font-bold text-[#00df9a] uppercase md:text-2xl sm:text-xl' >data analytics dashboard</h2>
                 <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold mb-4' >Manage Data Analytics Central</h2>

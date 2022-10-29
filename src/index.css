@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --primary-color:#e5f0f5;
+  --secondary-color:#ff7010;
+  --dark-color1:#031d2e;
+  --dark-color2:#17384e;
+  --white-color:#ffffff;
+  --transition:0.4s ease-in-out;
+}
+
 body{
-  background-color: #000300;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+  background-color: var(--dark-color1);
+  color: var(--primary-color);
+  /* font-family: 'Hanalei Fill', cursive; */
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.serif{
+  font-family: 'Philosopher', sans-serif;
+}
+
+.hero{
+  background-image: url(./assets/images/bg1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'Philosopher', sans-serif;
 }
