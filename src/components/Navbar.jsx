@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../assets/images/logo.svg";
-import { Routes, Route, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = React.useState(false);
@@ -11,14 +11,14 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-[#031d2e] text-white w-full sticky top-0 z-10">
+    <div className="bg-[#031d2e] text-white w-full sticky top-0 z-10 ">
       <div className=" text-white flex justify-between items-center h-24 px-2 md:px-12 px-4 md:mx-auto">
         <div>
         <Link to="/">
           <img src={logo} alt="logo" className="w-full" />
         </Link>
         </div>
-        <ul className="hidden md:flex transition-colors duration-500 ease-in-out cursor-pointer text-xl">
+        <ul className="hidden md:flex transition-colors duration-500 ease-in-out cursor-pointer text-xl items-center">
           <li className="p-4 hover:text-[#ff7010] transition-colors duration-500 ease-in-out">
             <Link to="/">Home</Link>
           </li>
@@ -31,7 +31,7 @@ const Navbar = () => {
           <li className="p-4 hover:text-[#ff7010]">
             <Link to="/contact">Contact</Link>
           </li>
-          <li className="p-4 hover:text-[#ff7010]">
+          <li className="text-[#ff7010] hover:text-[#fff] hover:bg-[#ff7010] border border-[#ff7010] ml-4 h-12 rounded-full px-6 flex items-center  transition-colors">
             <Link to="/appointment">Appointment</Link>
           </li>
         </ul>
@@ -61,21 +61,24 @@ const Navbar = () => {
             <img src={logo} alt="logo" className="p-4 pl-2" />
             </Link>
           <ul className="uppercase" onClick={() => setNav(!nav)}>
+          <Link to="/">
             <li className="p-4 hover:text-[#ff7010] border-gray-600 border-b">
-              <Link to="/">Home</Link>
-            </li>
+              Home
+            </li></Link>
+            <Link to="/services"><li className="p-4 hover:text-[#ff7010] border-gray-600 border-b">
+              Services
+            </li></Link>
+            <Link to="/about"><li className="p-4 hover:text-[#ff7010] border-gray-600 border-b">
+                About
+            </li></Link>
+            <Link to="/contact">
             <li className="p-4 hover:text-[#ff7010] border-gray-600 border-b">
-              <Link to="/services">Services</Link>
-            </li>
-            <li className="p-4 hover:text-[#ff7010] border-gray-600 border-b">
-              <Link to="/about">About</Link>
-            </li>
-            <li className="p-4 hover:text-[#ff7010] border-gray-600 border-b">
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li className="p-4 hover:text-[#ff7010]">
-              <Link to="/appointment">Appointment</Link>
-            </li>
+              Contact
+            </li></Link>
+            <Link to="/appointment">
+            <li className="p-4 hover:text-[#ff7010]  border-gray-600 border-b">
+             Appointment
+            </li></Link>
           </ul>
         </div>
       </div>

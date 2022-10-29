@@ -8,7 +8,7 @@ import service1 from "../assets/images/svg/service1.svg";
 // import service1 from "../assets/images/svg/service7.svg";
 // import service1 from "../assets/images/svg/service8.svg";
 
-const Services = () => {
+const OurServices = () => {
   return (
     <>
       <div className="bg-[#031d2e] text-white w-full  ">
@@ -19,7 +19,7 @@ const Services = () => {
             </h1>
             <hr className="w-24 text-center my-6 mx-auto border-[#ff7010] border-t-4 rounded-r-full" />
             <p className="font-bold text-gray-400">
-              We offer a range of services, from personalised readings to
+              We offer a range of OurServices, from personalised readings to
               remedies, <br />
               to help people connect with their true purpose in life.
             </p>
@@ -121,4 +121,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default OurServices;
