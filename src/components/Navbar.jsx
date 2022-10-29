@@ -14,7 +14,9 @@ const Navbar = () => {
     <div className="bg-[#031d2e] text-white w-full sticky top-0 z-10">
       <div className=" text-white flex justify-between items-center h-24 px-2 md:px-12 px-4 md:mx-auto">
         <div>
+        <Link to="/">
           <img src={logo} alt="logo" className="w-full" />
+        </Link>
         </div>
         <ul className="hidden md:flex transition-colors duration-500 ease-in-out cursor-pointer text-xl">
           <li className="p-4 hover:text-[#ff7010] transition-colors duration-500 ease-in-out">
@@ -51,11 +53,13 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "h-full fixed left-0 top-0 border-r border-gray-900 w-[60%] bg-[#000300] ease-in-out duration-500"
-              : " h-full fixed left-[-100%]  top-0 ease-in-out duration-500 bg-[#000300] "
+              ? "h-full fixed left-0 top-0 border-r border-gray-900 w-[60%] bg-[#031d2e] ease-in-out duration-500"
+              : " h-full fixed left-[-100%]  top-0 ease-in-out duration-500 bg-[#031d2e] "
           }
         >
-          <img src={logo} alt="logo" className="p-4 pl-2" />
+          <Link to="/">
+            <img src={logo} alt="logo" className="p-4 pl-2" />
+            </Link>
           <ul className="uppercase" onClick={() => setNav(!nav)}>
             <li className="p-4 hover:text-[#ff7010] border-gray-600 border-b">
               <Link to="/">Home</Link>
