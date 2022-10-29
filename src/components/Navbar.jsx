@@ -13,27 +13,34 @@ const Navbar = () => {
   return (
     <div className="bg-[#031d2e] text-white w-full sticky top-0 z-10 ">
       <div className=" text-white flex justify-between items-center h-24 px-2 md:px-12 px-4 md:mx-auto">
-        <div>
         <Link to="/">
+        <div>
           <img src={logo} alt="logo" className="w-full" />
-        </Link>
         </div>
+        </Link>
         <ul className="hidden md:flex transition-colors duration-500 ease-in-out cursor-pointer text-xl items-center">
+        <Link to="/">
           <li className="p-4 hover:text-[#ff7010] transition-colors duration-500 ease-in-out">
-            <Link to="/">Home</Link>
+            Home
           </li>
+            </Link>
+            <Link to="/services">
           <li className="p-4 hover:text-[#ff7010]">
-            <Link to="/services">Services</Link>
-          </li>
+            Services
+          </li></Link>
+          <Link to="/about">
           <li className="p-4 hover:text-[#ff7010]">
-            <Link to="/about">About</Link>
-          </li>
+            About
+          </li></Link>
+          <Link to="/contact">
           <li className="p-4 hover:text-[#ff7010]">
-            <Link to="/contact">Contact</Link>
-          </li>
+            Contact
+          </li></Link>
+          <Link to="/appointment">
           <li className="text-[#ff7010] hover:text-[#fff] hover:bg-[#ff7010] border border-[#ff7010] ml-4 h-12 rounded-full px-6 flex items-center  transition-colors">
-            <Link to="/appointment">Appointment</Link>
+            Appointment
           </li>
+          </Link>
         </ul>
 
         <div className="block md:hidden">
