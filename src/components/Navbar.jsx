@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-[#031d2e] text-white w-full sticky top-0 z-10 ">
+    <div className="bg-[#062538] text-white w-full sticky top-0 z-10 ">
       <div className=" text-white flex justify-between items-center h-24 px-2 md:px-12 px-4 md:mx-auto">
         <Link to="/">
         <div>
