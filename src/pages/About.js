@@ -9,7 +9,7 @@ const About = () => {
     <>
       <AboutUs />
       <WhyUs />
-      <Feedback />
+      <Feedback/>
       <Footer />
     </>
   )

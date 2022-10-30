@@ -1,10 +1,11 @@
 import React from "react";
 import richagour from "../assets/images/richagour.jpg";
+import call1 from "../assets/images/svg/call1.svg";
 
 const AboutUs = () => {
   return (
     <>
-    <div className="max-w-[1240px] mx-auto my-16 grid grid-cols-12 gap-8 px-4">
+    <div className="max-w-[1240px] mx-auto py-12 md:py-16 grid grid-cols-12 gap-8 px-4">
       <div className="col-span-full md:col-span-6">
         <img src={richagour} alt="Richa Gour Image" className="rounded-3xl mx-auto md:mx-0 w-[90%] h-auto"/>
       </div>
@@ -25,8 +26,10 @@ const AboutUs = () => {
           positive changes in your life, then we'd love to hear from you.
         </p>
 
-        <div class="as_contact_expert  ">
-          <span class="as_icon"></span>
+        <div class="as_contact_expert">
+          <span class="as_icon">
+            <img src={call1} alt="call-icon" />
+          </span>
           <a href="tel:+918839274398">
             <div>
               <h5 class="as_white">Contact Us for Astrology</h5>

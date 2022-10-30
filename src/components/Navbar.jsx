@@ -64,7 +64,7 @@ const Navbar = () => {
               : " h-full fixed left-[-100%]  top-0 ease-in-out duration-500 bg-[#031d2e] "
           }
         >
-          <Link to="/">
+          <Link to="/" onClick={() => setNav(!nav)}>
             <img src={logo} alt="logo" className="p-4 pl-2" />
             </Link>
           <ul className="uppercase" onClick={() => setNav(!nav)}>

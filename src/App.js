@@ -5,11 +5,14 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Services from './pages/Services'
 import Appointment from './pages/Appointment'
+import GoToTop from './pages/GoToTop'
 import {Routes,Route } from 'react-router-dom'
+
 
 function App() {
   return (
     <>
+    <GoToTop/>
     <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />

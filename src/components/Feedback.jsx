@@ -3,8 +3,7 @@ import React from "react";
 const feedback = () => {
   return (
     <>
-      {/* customer feedback section */}
-      <div className="max-w-[1240px] my-16 mx-auto py-16 px-4 flex flex-col justify-center content-center items-center text-center ">
+      <div className="max-w-[1240px] mx-auto py-12 md:py-16  px-4 flex flex-col justify-center content-center items-center text-center ">
         <div className="flex flex-col justify-center">
           <h3 className="text-4xl w-full font-bold mb-4 serif ">
             What Our Customers Say

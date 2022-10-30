@@ -1,18 +1,17 @@
 import React from "react";
 import service1 from "../assets/images/svg/service1.svg";
-// import service1 from "../assets/images/svg/service2.svg";
-// import service1 from "../assets/images/svg/service3.svg";
-// import service1 from "../assets/images/svg/service4.svg";
-// import service1 from "../assets/images/svg/service5.svg";
-// import service1 from "../assets/images/svg/service6.svg";
-// import service1 from "../assets/images/svg/service7.svg";
-// import service1 from "../assets/images/svg/service8.svg";
+import service2 from "../assets/images/svg/service2.svg";
+import service3 from "../assets/images/svg/service3.svg";
+import service6 from "../assets/images/svg/service6.svg";
+import trendingup from "../assets/images/svg/trendingup.svg";
+import health_and_safety from '../assets/images/svg/health_and_safety.svg';
+import query_stats from '../assets/images/svg/query_stats.svg';
+import travel_explore from '../assets/images/svg/travel_explore.svg';
 
 const OurServices = () => {
   return (
     <>
-      <div className="bg-[#031d2e] text-white w-full  ">
-        <div className=" w-full flex flex-col text-center flex-wrap mx-auto px-2 md:px-10 xl:px-0 ">
+        <div className=" bg-[#031d2e] text-white w-full py-12 md:py-16  flex flex-col text-center flex-wrap mx-auto px-2 md:px-10 xl:px-0  ">
           <div>
             <h1 className="md:text-4xl sm:text-4xl text-4xl font-bold md:pb-2 font-thin font-normal serif">
               Our Services
@@ -27,7 +26,7 @@ const OurServices = () => {
           <div className="flex justify-center gap-2 pt-6 flex-wrap md:pt-12 gap-6  ">
             <div class="as_service_box text-center w-[296px] flex flex-col justify-center items-center p-6">
               <span class="as_icon flex-shrink-0">
-                <img src={service1} alt="" />
+                <img src={service1} alt="Property icon" />
               </span>
               <h4 class="as_subheading serif text-2xl pt-6">
                 Property Purchase and selling
@@ -39,7 +38,7 @@ const OurServices = () => {
             </div>
             <div class="as_service_box text-center w-[296px] flex flex-col justify-center items-center p-6">
               <span class="as_icon flex-shrink-0">
-                <img src={service1} alt="" />
+                <img src={service2} alt="Child icon" />
               </span>
               <h4 class="as_subheading serif text-2xl pt-6">
               Child Related Problems
@@ -50,18 +49,18 @@ const OurServices = () => {
             </div>
             <div class="as_service_box text-center w-[296px] flex flex-col justify-center items-center p-6">
               <span class="as_icon flex-shrink-0">
-                <img src={service1} alt="" />
+                <img src={service3} alt="Relationship icon" />
               </span>
               <h4 class="as_subheading serif text-2xl pt-6">
               Relationship Counselling
               </h4>
               <hr className="w-24 text-center my-2 mx-auto border-[#ff7010] border-t-4 rounded-r-full" />
               <p>
-              ​Relationships: what they are and how to preserve them for a better life..</p>
+              We can help you build a stronger, happier relationship.</p>
             </div>
             <div class="as_service_box text-center w-[296px] flex flex-col justify-center items-center p-6">
               <span class="as_icon flex-shrink-0">
-                <img src={service1} alt="" />
+                <img src={service6} alt="Kundli icon" />
               </span>
               <h4 class="as_subheading serif text-2xl pt-6">
               Kundli Milan
@@ -72,7 +71,7 @@ const OurServices = () => {
             </div>
             <div class="as_service_box text-center w-[296px] flex flex-col justify-center items-center p-6">
               <span class="as_icon flex-shrink-0">
-                <img src={service1} alt="" />
+                <img src={trendingup} alt="Career icon" />
               </span>
               <h4 class="as_subheading serif text-2xl pt-6">
               Career Counseling
@@ -83,7 +82,7 @@ const OurServices = () => {
             </div>
             <div class="as_service_box text-center w-[296px] flex flex-col justify-center items-center p-6">
               <span class="as_icon flex-shrink-0">
-                <img src={service1} alt="" />
+                <img src={health_and_safety} alt="Health icon" />
               </span>
               <h4 class="as_subheading serif text-2xl pt-6">
               Health Related Issues
@@ -94,7 +93,7 @@ const OurServices = () => {
             </div>
             <div class="as_service_box text-center w-[296px] flex flex-col justify-center items-center p-6">
               <span class="as_icon flex-shrink-0">
-                <img src={service1} alt="" />
+                <img src={query_stats} alt="Share Market icon" />
               </span>
               <h4 class="as_subheading serif text-2xl pt-6">
               Share Market Analysis
@@ -105,7 +104,7 @@ const OurServices = () => {
             </div>
             <div class="as_service_box text-center w-[296px] flex flex-col justify-center items-center p-6">
               <span class="as_icon flex-shrink-0">
-                <img src={service1} alt="" />
+                <img src={travel_explore} alt="Travel icon" />
               </span>
               <h4 class="as_subheading serif text-2xl pt-6">
               Foreign Travel & Settlement
@@ -116,7 +115,6 @@ const OurServices = () => {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 };
