@@ -2,6 +2,8 @@ import React from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../assets/images/logo.svg";
 import {Link } from "react-router-dom";
+// import framer motion
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [nav, setNav] = React.useState(false);
@@ -36,11 +38,19 @@ const Navbar = () => {
           <li className="p-4 hover:text-[#ff7010]">
             Contact
           </li></Link>
+            {/* Motion */}
           <Link to="/appointment">
-          <li className="text-[#ff7010] hover:text-[#fff] hover:bg-[#ff7010] border border-[#ff7010] ml-4 h-12 rounded-full px-6 flex items-center  transition-colors">
+             <motion.li  whileHover={{ 
+              // box shadow round
+              boxShadow: "0 0 8px rgb(255, 112, 16)",
+              // boxShadow: "0 0 10px #ff7010",
+              textShadow: "0px 0px 8px #ff7010",
+            }}
+            whileTap={{ scale: 0.95 }} className="text-[#ff7010] border-2 border-[#ff7010] ml-4 h-12 rounded-full px-6 flex items-center  transition-colors">
             Appointment
-          </li>
+          </motion.li>
           </Link>
+         
         </ul>
 
         <div className="block md:hidden">

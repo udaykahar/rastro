@@ -1,6 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -34,7 +35,12 @@ const Hero = () => {
           Get in touch with central india's most eminent vedic astrologer.
         </p>
           <Link to="/appointment" className="w-min mx-auto py-6">
-            <button className="w-[260px] p-3 bg-[#ff7010] text-white text-2xl font-bold rounded-md ">Book Appointment</button>{" "}
+        <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }} className="w-[260px] p-3 bg-[#ff7010] text-white text-2xl font-bold rounded-md "
+          >
+            Book Appointment
+          </motion.button>
           </Link>
       </div>
     </div>

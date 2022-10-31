@@ -10,7 +10,7 @@ const AboutUs = () => {
         <img src={richagour} alt="Richa Gour Image" className="rounded-3xl mx-auto md:mx-0 w-[90%] h-auto"/>
       </div>
       <div className="col-span-full md:col-span-6">
-        <h1 class="text-4xl lg:text-5xl serif">About Acharaya Richa Gour</h1>
+        <h1 className="text-4xl lg:text-5xl serif">About Acharaya Richa Gour</h1>
         <hr className='w-24 text-center my-6 border-[#ff7010] border-t-4 rounded-r-full'/>
 
         <p>
@@ -26,14 +26,14 @@ const AboutUs = () => {
           positive changes in your life, then we'd love to hear from you.
         </p>
 
-        <div class="as_contact_expert">
-          <span class="as_icon">
+        <div className="as_contact_expert">
+          <span className="as_icon">
             <img src={call1} alt="call-icon" />
           </span>
           <a href="tel:+918839274398">
             <div>
-              <h5 class="as_white">Contact Us for Astrology</h5>
-              <h1 class="as_orange">+ (91) 8839274398</h1>
+              <h5 className="as_white">Contact Us for Astrology</h5>
+              <h1 className="as_orange">+ (91) 8839274398</h1>
             </div>
           </a>
         </div>

@@ -9,10 +9,10 @@ const BookAppointment = () => {
         <h1 className='serif text-4xl mx-auto'>Book Your Appointment To Discuss Any Problem.</h1>
         <hr className='w-24 mx-auto my-6 border-[#ff7010] border-t-4 rounded-r-full'/>
         <div>
-        <InlineWidget url="https://calendly.com/richanshastrology/horoscope"
+        <InlineWidget url="https://calendly.com/richanshastrology/horoscope?hide_event_type_details=hide_gdpr_banner=1"
             styles={{
                 width: '100%',
-                height: '1000px'
+                height: '1100px',
               }}
               pageSettings={{
                 backgroundColor: '062538',
@@ -21,13 +21,7 @@ const BookAppointment = () => {
                 primaryColor: 'ff7010',
                 textColor: 'fff'
               }}
-              utm={{
-                utmCampaign: 'Spring Sale 2019',
-                utmContent: 'Shoe and Shirts',
-                utmMedium: 'Ad',
-                utmSource: 'Facebook',
-                utmTerm: 'Spring'
-              }}
+              
         />
       </div>
 

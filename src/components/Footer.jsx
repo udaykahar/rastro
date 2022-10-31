@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 import arrow from "../assets/images/svg/arrow.svg";
 import map from "../assets/images/svg/map.svg";
@@ -9,7 +10,7 @@ import { FaFacebookSquare, FaTwitterSquare, FaInstagram, FaTelegram } from 'reac
 const Footer = () => {
   return (
     <>
-    <div className='max-w-[1240px] mx-auto py-8 px-4 flex justify-between flex-wrap gap-8 text-gray-300'>
+    <div className='max-w-[1240px] mx-auto py-8 px-4 flex justify-between flex-wrap gap-8 text-gray-300 transition'>
       <div>
       <img src={logo} alt="logo"  />
         <p className='py-4'>Outstanding Guidance Better Future</p>
@@ -30,19 +31,27 @@ const Footer = () => {
         <ul className='py-4 pt-0'>
           <div className='flex gap-3'>
             <img src={arrow} alt="map-icon"  />
+          <Link to="/about">
           <li className='py-2'>About</li>
+          </Link>
           </div>
-          <div className='flex gap-3'>
+          <div className='flex gap-3 '>
             <img src={arrow} alt="map-icon"  />
+            <Link to="/services">
           <li className='py-2'>Services</li>
+          </Link>
           </div>
-          <div className='flex gap-3'>
+          <div className='flex gap-3 '>
             <img src={arrow} alt="map-icon"  />
+            <Link to="/contact">
           <li className='py-2'>Contact</li>
+          </Link>
           </div>
-          <div className='flex gap-3'>
+          <div className='flex gap-3 '>
             <img src={arrow} alt="map-icon"  />
+            <Link to="/appointment">
           <li className='py-2'>Appointment</li>
+          </Link>
           </div>
         </ul>
         </div>
