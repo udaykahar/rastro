@@ -29,7 +29,7 @@ const OurServices = () => {
               to help people connect with their true purpose in life.
             </p>
           </div>
-          <div className="flex justify-center gap-2 pt-6 flex-wrap md:pt-12 gap-6  ">
+          <div className="flex justify-center pt-6 flex-wrap md:pt-12 gap-6  ">
             <div className="as_service_box text-center w-[296px] flex flex-col justify-center items-center p-6">
               <span className="as_icon flex-shrink-0">
                 <img src={service1} alt="Property icon" />

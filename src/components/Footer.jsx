@@ -15,10 +15,18 @@ const Footer = () => {
       <img src={logo} alt="logo"  />
         <p className='py-4'>Outstanding Guidance Better Future</p>
         <div className='flex gap-4'>
+          <a href="https://www.facebook.com/richagour26/" target="_blank" rel="noopener noreferrer">
           <FaFacebookSquare className='text-3xl' />
+          </a>
+          {/* <a href="http://" target="_blank" rel="noopener noreferrer">
           <FaTwitterSquare className='text-3xl' />
+          </a>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
           <FaInstagram className='text-3xl' />
+          </a> */}
+          <a href="https://t.me/Richaanshastrology" target="_blank" rel="noopener noreferrer">
           <FaTelegram className='text-3xl' />
+          </a>
           {/* <FaGithubSquare className='text-2xl' /> */}
         </div>
         {/* <p className='pt-6'>Copyright © 2022 Richaansh-Astrology</p> */}

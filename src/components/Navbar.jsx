@@ -13,8 +13,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-[#062538] text-white w-full sticky top-0 z-10 ">
-      <div className=" text-white flex justify-between items-center h-24 px-2 md:px-12 px-4 md:mx-auto">
+    <div className="bg-[#062538] text-white w-full sticky top-0 z-[100] ">
+      <div className=" text-white flex justify-between items-center h-24 px-2 md:px-12 px-4 md:mx-auto ">
         <Link to="/">
         <div>
           <img src={logo} alt="logo" className="w-full" />
@@ -26,13 +26,13 @@ const Navbar = () => {
             Home
           </li>
             </Link>
-            <Link to="/services">
-          <li className="p-4 hover:text-[#ff7010]">
-            Services
-          </li></Link>
           <Link to="/about">
           <li className="p-4 hover:text-[#ff7010]">
             About
+          </li></Link>
+            <Link to="/services">
+          <li className="p-4 hover:text-[#ff7010]">
+            Services
           </li></Link>
           <Link to="/contact">
           <li className="p-4 hover:text-[#ff7010]">

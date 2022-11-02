@@ -1,11 +1,16 @@
 import React from "react";
 import richagour from "../assets/images/richagour.jpg";
 import call1 from "../assets/images/svg/call1.svg";
+import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
     <>
-    <div className="max-w-[1240px] mx-auto py-12 md:py-16 grid grid-cols-12 gap-8 px-4">
+    <motion.div
+           initial={{ x: '100vw' }}
+           animate={{ x:0 }}
+           transition={{ duration: 0.5, type: 'tween' }} 
+    className="max-w-[1240px] mx-auto py-12 md:py-16 grid grid-cols-12 gap-8 px-4">
       <div className="col-span-full md:col-span-6">
         <img src={richagour} alt="Richa Gour Image" className="rounded-3xl mx-auto md:mx-0 w-[90%] h-auto"/>
       </div>
@@ -39,7 +44,7 @@ const AboutUs = () => {
         </div>
 
       </div>
-      </div>
+      </motion.div>
     </>
   );
 };
