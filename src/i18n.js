@@ -19,7 +19,7 @@ i18next
             },
             hn: {
                 translation: {
-                    title: "hum apko kaise madad kar sakte hai",
+                    title: "हम आपको कैसे मदद कर सकते है",
                     desc: " ye description hai hindi m"
                 }
             }
