@@ -19,8 +19,8 @@ i18next
             },
             hn: {
                 translation: {
-                    title: "mu m lele",
-                    desc: "mdarchod"
+                    title: "hum apko kaise madad kar sakte hai",
+                    desc: " ye description hai hindi m"
                 }
             }
         }
