@@ -14,8 +14,8 @@ const OurServices = () => {
   return (
     <>
         <motion.div className=" bg-[#031d2e] text-white w-full py-12 md:py-16  flex flex-col text-center flex-wrap mx-auto px-2 md:px-10 xl:px-0  "
-        initial={{ x: '100vw' }}
-        animate={{ x:0 }}
+          initial={{ opacity:0}}
+          animate={{ opacity:1}}
         transition={{ duration: 0.5, type: 'tween' }} 
         >
           <div>

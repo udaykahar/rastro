@@ -2,17 +2,27 @@ import React from "react";
 import Typed from "react-typed";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTranslation, Trans } from "react-i18next";
+import '../i18n.js';
+
+const langs = {
+  en: "English",
+  hn: "Hindi"
+};
 
 const Hero = () => {
+  const {t,i18n} = useTranslation();
   return (
-    // font family: 'Poppins', sans-serif;
     <div className="text-white hero ">
       <div className="max-w-[800px] w-full h-screen text-center flex flex-col justify-center mt-[-96px] mx-auto px-2 md:px-0 ">
         <p className="uppercase text-[#ff7010] font-bold text-xl pt-6 md:pt-0">
-          Outstanding Guidance Better Future
+          <Trans i18nKey={"desc"}>
+         yo motherfucker
+          </Trans>
+
         </p>
         <h1 className="md:text-5xl sm:text-6xl text-4xl font-bold serif py-2">
-          Wondering what future holds?
+          {t("title")}
         </h1>
         <div className="flex  justify-center items-center">
           <p className="sm:text-4xl text-xl font-bold py-2">

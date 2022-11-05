@@ -1,11 +1,17 @@
 import React from 'react'
 import {InlineWidget} from 'react-calendly'
+import { motion } from "framer-motion";
+
 
 
 
 const BookAppointment = () => {
   return (
-    <div className='text-center py-8 md:py16 px-2 md:px-0'>
+    <motion.div 
+    initial={{ opacity:0}}
+    animate={{ opacity:1}}
+  transition={{ duration: 0.5, type: 'tween' }} 
+    className='text-center py-8 md:py16 px-2 md:px-0'>
         <h1 className='serif text-4xl mx-auto'>Book Your Appointment To Discuss Any Problem.</h1>
         <hr className='w-24 mx-auto my-6 border-[#ff7010] border-t-4 rounded-r-full'/>
         <div>
@@ -25,7 +31,7 @@ const BookAppointment = () => {
         />
       </div>
 
-    </div>
+    </motion.div>
   )
 }
 

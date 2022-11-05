@@ -7,8 +7,8 @@ const AboutUs = () => {
   return (
     <>
     <motion.div
-           initial={{ x: '100vw' }}
-           animate={{ x:0 }}
+             initial={{ opacity:0}}
+             animate={{ opacity:1}}
            transition={{ duration: 0.5, type: 'tween' }} 
     className="max-w-[1240px] mx-auto py-12 md:py-16 grid grid-cols-12 gap-8 px-4">
       <div className="col-span-full md:col-span-6">

@@ -2,6 +2,8 @@ import React from "react";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import { useForm, ValidationError } from "@formspree/react";
 import call1 from "../assets/images/svg/call1.svg";
+import { motion } from "framer-motion";
+
 
 const containerStyle = {
   width: "100%",
@@ -41,7 +43,11 @@ const ContactUs = () => {
 
 
   return (
-    <div className="">
+    <motion.div 
+    initial={{ opacity:0}}
+        animate={{ opacity:1}}
+        transition={{ duration: 0.5, type: 'tween' }} 
+    >
       <section className="text-gray-600 body-font relative ">
         <div className="flex max-w-[1240px] justify-between mx-auto py-16 flex-wrap ">
           <div className="z-[0] text-white  text-center md:text-justify">
@@ -125,7 +131,7 @@ const ContactUs = () => {
           </LoadScript>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 
