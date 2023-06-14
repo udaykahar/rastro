@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import  logo from "../public/images/logo.svg";
+import Image from 'next/image'
 import Link from "next/link";
 // import framer motion
 import { motion } from "framer-motion";
@@ -18,7 +19,11 @@ const Navbar = () => {
       <div className=" text-white flex justify-between items-center h-24 px-2 md:px-12 px-4 md:mx-auto ">
         <Link href="/">
           <div>
-            <img src={logo} alt="logo" className="w-full" />
+                 <Image
+                    src={logo}
+                    className="w-full"
+                    alt="logo image"
+                  />
           </div>
         </Link>
         <ul className="hidden md:flex transition-colors duration-500 ease-in-out cursor-pointer text-xl items-center">

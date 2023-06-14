@@ -1,0 +1,29 @@
+/* why choose us */
+.as_whychoose_box_span {
+    font-size: 24px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .as_whychoose_box_h4 {
+    font-size: 20px;
+    margin: 25px auto;
+    text-align: center;
+    transition: all 0.2s linear;
+    text-align: center;
+  }
+  .as_number {
+    display: block;
+    position: relative;
+    width: 130px;
+    margin: 0 auto;
+  }
+  .as_whychoose_box_h4:hover {
+    color: #ff7010;
+  }
+  
+  

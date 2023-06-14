@@ -1,19 +1,13 @@
-import { useRef, React } from "react";
+import { useRef,useEffect, React } from "react";
 import shape from "../public/images/svg/shape.svg";
 import { animate, motion } from "framer-motion";
+import styles from '../styles/whyus.module.css';
+import Image from 'next/image'
+import { whyUs } from "../constant";
+
 
 const WhyUs = () => {
-  const yearsCount = useRef(null);
 
-  const animationYearsCount = () => {
-    const count = +yearsCount.current.innerText;
-    animate(0, 15, {
-      duration: 1,
-      onUpdate: (v) => {
-        yearsCount.current.innerText = Math.floor(v);
-      },
-    });
-  };
 
   const SuccessCount = useRef(null);
 
@@ -27,22 +21,10 @@ const WhyUs = () => {
     });
   };
 
-  const horoscopeCount = useRef(null);
-
-  const animationHoroscopeCount = () => {
-    const count = +horoscopeCount.current.innerText;
-    animate(0, 800, {
-      duration: 1,
-      onUpdate: (v) => {
-        horoscopeCount.current.innerText = Math.floor(v);
-      },
-    });
-  };
-
-  const clientCount = useRef(null);
-
+  const Count = useRef(null);
   const animationClientCount = () => {
-    const count = +clientCount.current.innerText;
+    const count = Count.current.innerText;
+    console.log("count : ",count);
     animate(0, 1500, {
       duration: 1,
       onUpdate: (v) => {
@@ -50,6 +32,7 @@ const WhyUs = () => {
       },
     });
   };
+
 
   return (
     <>
@@ -66,58 +49,26 @@ const WhyUs = () => {
           </p>
         </div>
         <div className="inline-grid grid-cols-12 col-span-full md:col-span-8 gap-2 pt-8 md:pt-0">
-          <div className=" as_whychoose_box text-center col-span-6 md:col-span-3">
-            <span className="as_number">
-              <span>
-              <motion.span ref={clientCount} whileInView={animationClientCount}>
-                  1500
-                </motion.span>
-                +
-              </span>
-              <img src={shape} alt="" />
-            </span>
-            <h4>
-              Trusted by <br /> thousand clients
-            </h4>
-          </div>
-          <div className=" as_whychoose_box text-center col-span-6 md:col-span-3">
-            <span className="as_number">
-              <span>
-              <motion.span ref={horoscopeCount} whileInView={animationHoroscopeCount}>
-                  800
-                </motion.span>
-                +
-              </span>
-              <img src={shape} alt="" />
-            </span>
-            <h4>Types of horoscopes</h4>
-          </div>
-          <div className=" as_whychoose_box text-center col-span-6 md:col-span-3">
-            <span className="as_number">
-              <span>
-                <motion.span ref={SuccessCount} whileInView={animationSuccessCount}>
-                  80
-                </motion.span>
-                %
-              </span>
-              <img src={shape} alt="" />
-            </span>
-            <h4>Success rate</h4>
-          </div>
 
-          <div className=" as_whychoose_box text-center col-span-6 md:col-span-3">
-            <span className="as_number">
-              <span>
-                <motion.span ref={yearsCount} whileInView={animationYearsCount}>
-                  15
-                </motion.span>
-                +
+        {whyUs.map((client) => (
+            <div className="text-center col-span-6 md:col-span-3">
+              <span className={styles.as_number}>
+                <span className={styles.as_whychoose_box_span}>
+                  <motion.span ref={clientCount} whileInView={animationClientCount}>
+                    {client.value}
+                  </motion.span>
+                  +
+                </span>
+                <Image src={shape} alt="astrological logo" />
               </span>
-              <img src={shape} alt="" />
-            </span>
-            <h4>Year experience</h4>
-          </div>
-        </div>
+
+              <h4 className={styles.as_whychoose_box_h4}>
+                {client.text}
+              </h4>
+            </div>
+          ))}
+        
+        </div> 
       </div>
     </>
   );

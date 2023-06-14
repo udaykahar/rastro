@@ -141,30 +141,3 @@ body{
   right: -10px;
   border-radius: 100%;
 }
-
-/* why choose us */
-.as_whychoose_box .as_number>span {
-  font-size: 24px;
-  font-family: 'Philosopher', sans-serif;
-  font-weight: 700;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-.as_whychoose_box h4 {
-  font-size: 20px;
-  margin: 25px 0 35px;
-  text-align: center;
-  transition: all 0.2s linear;
-}
-.as_number {
-  display: block;
-  position: relative;
-  width: 130px;
-  margin: 0 auto;
-}
-.as_whychoose_box:hover h4 {
-  color: var(--secondary-color);
-}
-
