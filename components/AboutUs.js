@@ -1,7 +1,8 @@
 import React from "react";
-import richagour from "../assets/images/richagour.jpg";
-import call1 from "../assets/images/svg/call1.svg";
+import richagour from "../public/images/richagour.jpg";
+import call1 from "../public/images/svg/call1.svg";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const AboutUs = () => {
   return (
@@ -12,7 +13,7 @@ const AboutUs = () => {
            transition={{ duration: 0.5, type: 'tween' }} 
     className="max-w-[1240px] mx-auto py-12 md:py-16 grid grid-cols-12 gap-8 px-4">
       <div className="col-span-full md:col-span-6">
-        <img src={richagour} alt="Richa Gour Image" className="rounded-3xl mx-auto md:mx-0 w-[90%] h-auto"/>
+        <Image src={richagour} alt="Richa Gour Image" className="rounded-3xl mx-auto md:mx-0 w-[90%] h-auto"/>
       </div>
       <div className="col-span-full md:col-span-6">
         <h1 className="text-4xl lg:text-5xl serif">About Acharaya Richa Gour</h1>
@@ -33,7 +34,7 @@ const AboutUs = () => {
 
         <div className="as_contact_expert">
           <span className="as_icon">
-            <img src={call1} alt="call-icon" />
+            <Image src={call1} alt="call-icon" />
           </span>
           <a href="tel:+918839274398">
             <div>

@@ -6,13 +6,14 @@ import map from "../public/images/svg/map.svg";
 import address from "../public/images/svg/address.svg";
 import call from "../public/images/svg/call.svg";
 import { FaFacebookSquare, FaTwitterSquare, FaInstagram, FaTelegram } from 'react-icons/fa'
+import Image from 'next/image';
 
 const Footer = () => {
   return (
     <>
     <div className='max-w-[1240px] mx-auto py-8 px-4 flex justify-between flex-wrap gap-8 text-gray-300 transition'>
       <div>
-      <img src={logo} alt="logo"  />
+      <Image src={logo} alt="logo"  />
         <p className='py-4'>Outstanding Guidance Better Future</p>
         <div className='flex gap-4'>
           <a href="https://www.facebook.com/richagour26/" target="_blank" rel="noopener noreferrer">
@@ -38,25 +39,25 @@ const Footer = () => {
         <div className='flex flex-row justify-between'>
         <ul className='py-4 pt-0'>
           <div className='flex gap-3'>
-            <img src={arrow} alt="map-icon"  />
+            <Image src={arrow} alt="map-icon"  />
           <Link href="/about">
           <li className='py-2'>About</li>
           </Link>
           </div>
           <div className='flex gap-3 '>
-            <img src={arrow} alt="map-icon"  />
+            <Image src={arrow} alt="map-icon"  />
             <Link href="/services">
           <li className='py-2'>Services</li>
           </Link>
           </div>
           <div className='flex gap-3 '>
-            <img src={arrow} alt="map-icon"  />
+            <Image src={arrow} alt="map-icon"  />
             <Link href="/contact">
           <li className='py-2'>Contact</li>
           </Link>
           </div>
           <div className='flex gap-3 '>
-            <img src={arrow} alt="map-icon"  />
+            <Image src={arrow} alt="map-icon"  />
             <Link href="/appointment">
           <li className='py-2'>Appointment</li>
           </Link>
@@ -71,15 +72,15 @@ const Footer = () => {
         <div className='flex flex-row justify-between'>
         <ul className='py-4 pt-0'>
           <div className='flex gap-2'>
-            <img src={map} alt="map-icon"  />
+            <Image src={map} alt="map-icon"  />
           <li className='py-2'>Shiv Elite Township , Khapri , 441108, Nagpur, India</li>
           </div>
           <div className='flex gap-2'>
-            <img src={address} alt="address-icon"  />
+            <Image src={address} alt="address-icon"  />
           <li className='py-2'>richaansh26@gmail.com</li>
           </div>
           <div className='flex gap-2'>
-            <img src={call} alt="call-icon"  />
+            <Image src={call} alt="call-icon"  />
           <li className='py-2'>+(91) 8839274398</li>
           </div>
         </ul>

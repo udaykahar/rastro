@@ -1,8 +1,9 @@
 import React from "react";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import { useForm, ValidationError } from "@formspree/react";
-import call1 from "../assets/images/svg/call1.svg";
+import call1 from "../public/images/svg/call1.svg";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 
 const containerStyle = {
@@ -59,7 +60,7 @@ const ContactUs = () => {
             </p>
             <div className="as_contact_expert mt-8 mx-6 md:mx-0">
               <span className="as_icon">
-                <img src={call1} alt="call-icon" />
+                <Image src={call1} alt="call-icon" />
               </span>
               <a href="tel:+918839274398">
                 <div>

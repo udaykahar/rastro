@@ -10,7 +10,6 @@ const Appointment = () => {
       <BookAppointment/>
       <WhyUs/>
       <Feedback/>
-      <Footer/>
     </div>
   )
 }

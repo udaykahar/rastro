@@ -10,7 +10,6 @@ const Services = () => {
       <OurServices />
       <WhyUs />
       <Feedback />
-      <Footer />
     </>
   )
 }
